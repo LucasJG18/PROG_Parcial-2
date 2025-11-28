@@ -86,8 +86,9 @@ val valores = Map(
 def puntajeReacciones(reacciones: List[String]): Int =
   reacciones.map(valores).sum
 
-val publicacionesLargas = publicaciones.filter(_.texto.split(" ").length >= 15)
+val publicacionesLargas = publicaciones.filter(_.texto.split(" ").length >= 11)
 
 val publicacionesConPuntaje = publicacionesLargas.map { p => PublicacionConPuntaje(p, puntajeReacciones(p.reacciones))}
 
 val mejorPublicacion = publicacionesConPuntaje.maxBy(_.puntaje)
+
