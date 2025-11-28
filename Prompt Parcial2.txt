@@ -74,4 +74,8 @@ val publicaciones: List[Publicacion] = List(
   )
 )
 
-Ayudame a filtrar las publicaciones que tienen un minimo de 15 palabras en su publicacion, transformar la lista de reacciones de acuerdo a: like = 1, love = 3, wow = 2, haha = 1, angry = -1). luego crear un: case class PublicacionConPuntaje(pub: Publicacion, puntaje: Int) con la publicación original y su puntaje calculado y seleccionar la que tenga el mayor valor en el campo puntaje.
+1) Ayudame a filtrar las publicaciones que tienen un minimo de 15 palabras en su publicacion, transformar la lista de reacciones de acuerdo a: like = 1, love = 3, wow = 2, haha = 1, angry = -1). luego crear un: case class PublicacionConPuntaje(pub: Publicacion, puntaje: Int) con la publicación original y su puntaje calculado y seleccionar la que tenga el mayor valor en el campo puntaje.
+
+2) Me da el sigiuente error: java.lang.UnsupportedOperationException: empty.maxBy at scala.collection.IterableOnceOps.maxBy(IterableOnce.scala:1160) at scala.collection.IterableOnceOps.maxBy$(IterableOnce.scala:1158) at scala.collection.AbstractIterable.maxBy(Iterable.scala:935) ... 44 elided
+
+3) Cambiemos le minimo a uno compatible con las publicaciones
